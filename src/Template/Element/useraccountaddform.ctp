@@ -2,7 +2,7 @@
     <fieldset id="user-add">
         <legend><?= __('Add User') ?></legend>
         <?= $this->Form->control('name', ['value' => '']); ?>
-        <?= $this->Form->control('email', ['value' => '@']); ?>
+        <?= $this->Form->control('email', ['value' => false, 'autocomplete' => 'off']); ?>
         <div class="input admin">
             <?= $this->Form->label('admin', 'Admin'); ?>
             <?= $this->Form->checkbox('admin'); ?>
